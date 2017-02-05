@@ -1,0 +1,6 @@
+<div class="list__list-item">
+    <img class="list__complete-button" ng-src="./img/complete-icon{{completeButtonHover}}.png" ng-init="completeButtonHover=''" ng-mouseover="completeButtonHover='-hover'"  ng-mouseleave="completeButtonHover=''" ng-click="completeTask($index)">
+    <li class="list__task-description" ng-class="{ 'list_task-description_complete' : tasks[$index].completed }" ng-transclude></li>
+    <img class="list__remove-button" ng-src="./img/remove-icon{{removeButtonHover}}.png" ng-init="removeButtonHover=''" ng-mouseover="removeButtonHover='-hover'"  ng-mouseleave="removeButtonHover=''" ng-click="removeTask($index)">
+    <img class="list__edit-button" ng-src="./img/edit-icon{{editButtonHover}}.png" ng-init="editButtonHover=''" ng-mouseover="editButtonHover='-hover'"  ng-mouseleave="editButtonHover=''" ng-click="editTask($index)">
+</div>

@@ -1,0 +1,21 @@
+.filter {
+    font-size: 0.5em;
+    margin-left: 5%;
+    padding-bottom: 10px;
+    color: #bbb;
+}
+
+.filter__button {
+    margin-right: 5%;
+}
+
+.filter__button:after {
+    content: '/';
+    padding-left: 5%;
+    color: #bbb;
+}
+
+.filter__button:hover {
+    color: #fff;
+    cursor: pointer;
+}

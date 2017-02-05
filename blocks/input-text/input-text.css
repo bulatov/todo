@@ -1,0 +1,14 @@
+.input-text {
+    margin: 15px 5%;
+    width: 95%;
+    height: 70px;
+    background-color: inherit;
+    color: #bbb;
+    border: 0;
+    font: inherit;
+    border-bottom: 2px #444 solid;
+}
+
+.input-text:focus {
+    outline: 0;
+}

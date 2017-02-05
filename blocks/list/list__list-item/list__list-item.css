@@ -1,0 +1,32 @@
+.list__list-item {
+    border-top: 2px #444 solid;
+}
+
+.list__task-description:focus {
+    outline: 0;
+}
+
+.list__task-description {
+    display: inline-block;
+    overflow: hidden;
+    width: 70%;
+    margin-bottom: -25px;
+}
+
+.list_task-description_complete {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.list__remove-button, .list__edit-button, .list__complete-button {
+    display: inline;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.list__complete-button {
+    float: left;
+}

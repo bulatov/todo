@@ -2,7 +2,8 @@ angular.module('app')
 .directive('todo', function() {
     var template = angular.my.funcs.template('./blocks/todo/todo.html');
     template.controller = function($scope, $http) {
-
+        $scope.tasks = [];
+        
         if (!localStorage.todo) {
             localStorage.todo = '{}';
         }
@@ -18,7 +19,6 @@ angular.module('app')
                 localStorage.todo = JSON.stringify({
                     token: token
                 });
-                $scope.tasks = [];
                 url += token;
                 console.log(url);
             })

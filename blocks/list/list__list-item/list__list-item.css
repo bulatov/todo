@@ -7,6 +7,11 @@
 }
 
 .list__task-description {
+    all: inherit;
+    border: 0;
+}
+
+.list__task-description {
     display: inline-block;
     overflow: hidden;
     width: 70%;

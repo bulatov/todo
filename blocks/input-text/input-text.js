@@ -10,7 +10,7 @@ angular.module('app')
                     completed: false
                 });
                 scope.newTask = '';
-                scope.$apply(); // TODO: ?
+                scope.$apply();
                 event.preventDefault();
             }
         });
